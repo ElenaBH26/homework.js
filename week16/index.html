@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма регистрации</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Форма регистрации</h1>
+
+    <form id="registrationForm">  
+        <div class="formGroup">
+            <input type="text" name="nameUser" id="nameUser" placeholder="Введите имя" required>
+            <span class="errorMessage" id="errorName" style="display: none;">Это поле обязательно для заполнения</span>
+        </div>
+        <div class="formGroup">
+            <input type="email" name="emailUser" id="emailUser" placeholder="Введите почту" required>
+            <span class="errorMessage" id="errorEmail" style="display: none;">Это поле обязательно для заполнения</span>
+        </div>
+        <div class="formGroup">
+            <input type="number" name="ageUser" id="ageUser" placeholder="Введите возраст" required>
+            <span class="errorMessage" id="errorAge" style="display: none;">Это поле обязательно для заполнения</span>
+        </div>
+        <div class="formGroup">
+            <label>Пол:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Мужской</label>
+            <span class="errorMessage" style="display: none;"></span>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Женский</label>
+            <span class="errorMessage" id="errorGender" style="display: none;">Выберете пол</span>
+        </div>
+        <div class="formGroup">
+            <label for="professionUser">Выберете профессию:</label>
+            <select name="professionUser" id="professionUser" required>
+                <option value="teacher">Учитель</option>
+                <option value="doctor">Врач</option>
+                <option value="engineer">Инженер</option>
+                <option value="designer">Дизайнер</option>
+            </select>
+            <span class="errorMessage" id="errorProfession" style="display: none;">Выберете профессию</span>
+        </div>
+        <div class="formGroup">
+            <input type="password" name="passwordUser" id="passwordUser" placeholder="Введите пароль"
+                    required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}"> 
+                    <span class="errorMessage" id="errorPassword" style="display: none;"> Пароль должен быть не менее 8 символов длиной и 
+                        содержать как минимум 1 заглавную букву, 1 строчную букву и 1 цифру.</span>
+        </div>
+        <div class="formGroup">
+            <input type="checkbox" name="approvalUser" id="approvalUser"> Нажимая кнопку "Отправить" Вы даёте свое согласие на обработку введенной персональной информации.
+            <span class="errorMessage" id="errorApproval" style="display: none;">Подтвердите согласие </span>
+        </div>
+
+        <button type="submit" id="submitBtn">Отправить</button>
+    </form>
+
+    <script src="index.js"></script>
+</body>
+</html>
