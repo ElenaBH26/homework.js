@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="add-task">
+        <h2>Добавить задачу</h2>
+        <input type="text" id="taskInput" placeholder="Задача">
+        <button class="add-btn" type="button" id="addBtn">Добавить</button>
+    </div>
+    <div class="list-task">
+        <h2>Список задач</h2>
+        <ul id="taskList"></ul>
+        <p class="emptyMessage" id="emptyMessage">Задач нет</p>
+        <button id="clearBtn" disabled>Очистить список</button>
+    </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+}
+
+    .container {
+    margin: 0 auto;
+    }
+
+    .add-task input {
+    width: 400px;
+    height: 40px;
+    color: gray;
+    }
+
+    .add-task button {
+    width: 100px;
+    height: 45px;
+    background-color: rgb(208, 188, 235);
+    font-size: 16px;
+    color: rgb(251, 250, 230);
+    border: solid 0.01em black;
+    cursor: pointer;
+    }
+
+    .list-task button {
+        width: 150px;
+        height: 20px;
+        background-color: rgb(209, 203, 217);
+        font-size: 14px;
+        color: rgb(13, 13, 11);
+        border: solid 0.01em black;
+        
+    }
+
+    button :disabled {
+        cursor: not-allowed;
+        background-color: #ccc;
+
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li input[type="checkbox"] {
+        margin-right: 5px;
+    }
+
+    .emptyMessage {
+        color: gray;
+        
+    }
+    
